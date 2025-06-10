@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darwyn // Burn the Silence</title>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #000000;
+      --text-light: #000000;
+      --text-dark: #ffffff;
+    }body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.4s ease;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+.toggle-button {
+  background: none;
+  border: 1px solid currentColor;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🔥 DARWYN: Burn the Silence 🔥</h1>
+    <button class="toggle-button" onclick="toggleTheme()">Switch Theme</button>
+  </header>
+  <main>
+    <section>
+      <h2>About Darwyn</h2>
+      <p>
+        I am fire, ink and echo. My words aren’t just words — they are screams in lowercase. This space is where my pain, poetry, and paradoxes breathe.
+      </p>
+    </section>
+    <section>
+      <h2>Poems</h2>
+      <article>
+        <h3>Poem 1 – [Title Placeholder]</h3>
+        <p>[Your first poem goes here]</p>
+      </article>
+      <article>
+        <h3>Poem 2 – [Title Placeholder]</h3>
+        <p>[Your second poem goes here]</p>
+      </article>
+    </section>
+  </main>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+  </html>
